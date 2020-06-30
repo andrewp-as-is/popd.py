@@ -1,10 +1,10 @@
-#!/usr/bin/env python
+__all__ = ['popd']
+
+
 from functools import wraps
 import os
-import public
 
 
-@public.add
 def popd(func):
     """`@popd` decorator. restore previous current directory"""
     @wraps(func)
